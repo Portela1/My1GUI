@@ -36,14 +36,14 @@ public class Car {
 		
 		Graphics2D g2 = (Graphics2D) g;
 
-		Rectangle body = new Rectangle(0, 20, 120, 30);
+		Rectangle body = new Rectangle(xPosition, yPosition + 20, 140, 30);
 
-		Ellipse2D.Double rearTire = new Ellipse2D.Double(20, 50, 20, 20);
-		Ellipse2D.Double frontTire = new Ellipse2D.Double(70, 50, 20, 20);
+		Ellipse2D.Double rearTire = new Ellipse2D.Double(xPosition + 10, yPosition + 50, 20, 20);
+		Ellipse2D.Double frontTire = new Ellipse2D.Double(xPosition + 110, yPosition + 50, 20, 20);
 
-		Line2D.Double rearWindow = new Line2D.Double(20, 20, 40, 0);
-		Line2D.Double frontWindow = new Line2D.Double(60, 0, 80, 20);
-		Line2D.Double roof = new Line2D.Double(40, 0, 60, 0);
+		Line2D.Double rearWindow = new Line2D.Double(xPosition + 20, yPosition + 20, xPosition + 30, yPosition);
+		Line2D.Double frontWindow = new Line2D.Double(xPosition + 105, yPosition, xPosition + 115 , yPosition + 20);
+		Line2D.Double roof = new Line2D.Double(xPosition + 30, yPosition, xPosition + 105, yPosition);
 
 		g2.setColor(Color.BLUE);
 		g2.fill(body);

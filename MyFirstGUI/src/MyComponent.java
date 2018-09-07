@@ -10,10 +10,10 @@ import javax.swing.JComponent;
 public class MyComponent extends JComponent {
 
 	public void paintComponent(Graphics g) {
-
-		Car theCar = new Car(0,0);
 		
-		Car theCar2 = new Car(100,100);
+		
+		Car theCar = new Car (100,100);
+		Car theCar2 = new Car(100,200);
 		
 		theCar.draw(g);
 		theCar2.draw(g);
